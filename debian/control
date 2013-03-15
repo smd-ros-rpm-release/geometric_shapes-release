@@ -1,0 +1,12 @@
+Source: ros-groovy-geometric-shapes
+Section: misc
+Priority: extra
+Maintainer: Ioan Sucan <isucan@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), libassimp-dev, libboost-all-dev, libeigen3-dev, libqhull-dev, ros-groovy-catkin, ros-groovy-console-bridge, ros-groovy-eigen-stl-containers, ros-groovy-octomap, ros-groovy-random-numbers, ros-groovy-resource-retriever, ros-groovy-shape-msgs, ros-groovy-shape-tools
+Homepage: http://ros.org/wiki/geometric_shapes
+Standards-Version: 3.9.2
+
+Package: ros-groovy-geometric-shapes
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libassimp-dev, libboost-all-dev, libeigen3-dev, libqhull-dev, ros-groovy-console-bridge, ros-groovy-eigen-stl-containers, ros-groovy-octomap, ros-groovy-random-numbers, ros-groovy-resource-retriever, ros-groovy-shape-msgs, ros-groovy-shape-tools
+Description: This package contains generic definitions of geometric shapes and bodies.
