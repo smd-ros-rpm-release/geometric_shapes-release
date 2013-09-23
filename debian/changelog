@@ -1,0 +1,9 @@
+ros-hydro-geometric-shapes (0.3.5-0raring) raring; urgency=high
+
+  * Fix syntax error.
+  * white space fixes (tabs are now spaces)
+  * add comments for shape definitions
+
+ -- Ioan Sucan <isucan@willowgarage.com>  Sun, 22 Sep 2013 21:00:00 -0000
+
+
