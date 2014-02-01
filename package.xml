@@ -1,6 +1,6 @@
 <package>
   <name>geometric_shapes</name>
-  <version>0.3.5</version>
+  <version>0.3.6</version>
   <description>This package contains generic definitions of geometric shapes and bodies.</description>
   <author email="isucan@willowgarage.edu">Ioan Sucan</author>
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
@@ -8,13 +8,13 @@
   <license>BSD</license>  
   <url>http://ros.org/wiki/geometric_shapes</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend version_gte="0.5.68">catkin</buildtool_depend>
 
   <build_depend>boost</build_depend>
   <build_depend>shape_msgs</build_depend>
   <build_depend>shape_tools</build_depend>
   <build_depend>octomap</build_depend>
-  <build_depend>assimp</build_depend>
+  <build_depend>assimp-dev</build_depend>
   <build_depend>eigen</build_depend>
   <build_depend>libqhull</build_depend>
   <build_depend>console_bridge</build_depend>
