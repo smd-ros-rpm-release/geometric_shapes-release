@@ -1,3 +1,22 @@
+## geometric_shapes - 0.3.6-0
+
+User `isucan@bxl.mtv.corp.google.com` released the packages in the `geometric_shapes` repository by running `/usr/bin/bloom-release -r hydro -t hydro geometric_shapes` on `Sat, 01 Feb 2014 00:19:15 -0000`
+
+The `geometric_shapes` package was released.
+
+Version of package(s) in repository `geometric_shapes`:
+- rosdistro version: `0.3.5-0`
+- old version: `0.3.5-0`
+- new version: `0.3.6-0`
+
+Versions of tools used:
+- bloom version: `0.4.8`
+- catkin_pkg version: `0.1.25`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.3`
+- vcstools version: `0.1.33`
+
+
 ## geometric_shapes - 0.3.5-0
 
 User `isucan@i7` released the packages in the `geometric_shapes` repository by running `/usr/local/bin/bloom-release -r hydro -t hydro geometric_shapes -e` on `Mon, 23 Sep 2013 11:50:34 -0000`
