@@ -15,12 +15,11 @@ if (NOT ASSIMP_FOUND)
   pkg_check_modules(ASSIMP assimp)
 endif()
 if (ASSIMP_FOUND)
-  if( ${ASSIMP_VERSION} STRGREATER "2.0.0" )
-    set(IS_ASSIMP3 1)
-    add_definitions(-DIS_ASSIMP3)
-    message(STATUS "Found assimp v3")
+  if( NOT ${ASSIMP_VERSION} STRLESS "2.0.1150" )
+    add_definitions(-DASSIMP_UNIFIED_HEADER_NAMES)
+    message(STATUS "Assimp version has unified headers")
   else()
-    message(STATUS "Found assimp v2")
+    message(STATUS "Assimp version does not have unified headers")
   endif()
 else()
   message(STATUS "could not find assimp (perhaps available thorugh ROS package?), so assuming assimp v2")
@@ -32,7 +31,6 @@ else()
   set(ASSIMP_CFLAGS_OTHER)
   set(ASSIMP_LINK_FLAGS)
   set(ASSIMP_INCLUDE_DIRS)
-  set(IS_ASSIMP3 0) # most likely not
 endif()
 
 find_package(octomap REQUIRED)
@@ -50,8 +48,8 @@ if (HAVE_QHULL_2011)
   add_definitions(-DGEOMETRIC_SHAPES_HAVE_QHULL_2011)
 endif()
 
-include_directories(SYSTEM ${EIGEN_INCLUDE_DIRS} ${Boost_INCLUDE_DIR} ${ASSIMP_INCLUDE_DIRS})
 include_directories(include)
+include_directories(SYSTEM ${EIGEN_INCLUDE_DIRS} ${Boost_INCLUDE_DIR} ${ASSIMP_INCLUDE_DIRS} ${OCTOMAP_INCLUDE_DIRS})
 include_directories(${catkin_INCLUDE_DIRS})
 link_directories(${catkin_LIBRARY_DIRS} ${ASSIMP_LIBRARY_DIRS})
 
@@ -64,8 +62,10 @@ add_library(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME} ${ASSIMP_LIBRARIES} ${QHULL_LIBRARIES} ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
 
-# Unit tests
-add_subdirectory(test)
+if(CATKIN_ENABLE_TESTING)
+  # Unit tests
+  add_subdirectory(test)
+endif()
 
 install(TARGETS ${PROJECT_NAME}
         ARCHIVE DESTINATION lib
