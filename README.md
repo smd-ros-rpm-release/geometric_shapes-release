@@ -1,3 +1,22 @@
+## geometric_shapes - 0.3.7-0
+
+User `isucan@isucan-glaptop0` released the packages in the `geometric_shapes` repository by running `/usr/bin/bloom-release -t indigo -r indigo geometric_shapes` on `Mon, 24 Feb 2014 06:48:30 -0000`
+
+The `geometric_shapes` package was released.
+
+Version of package(s) in repository `geometric_shapes`:
+- rosdistro version: `0.3.6-0`
+- old version: `0.3.6-0`
+- new version: `0.3.7-0`
+
+Versions of tools used:
+- bloom version: `0.4.9`
+- catkin_pkg version: `0.1.26`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## geometric_shapes - 0.3.6-0
 
 User `isucan@isucan-glaptop0` released the packages in the `geometric_shapes` repository by running `/usr/bin/bloom-release -t indigo -r indigo --new-track geometric_shapes` on `Sat, 22 Feb 2014 09:06:43 -0000`
