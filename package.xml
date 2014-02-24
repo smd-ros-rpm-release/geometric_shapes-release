@@ -1,6 +1,6 @@
 <package>
   <name>geometric_shapes</name>
-  <version>0.3.6</version>
+  <version>0.3.7</version>
   <description>This package contains generic definitions of geometric shapes and bodies.</description>
   <author email="isucan@willowgarage.edu">Ioan Sucan</author>
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
@@ -21,6 +21,7 @@
   <build_depend>random_numbers</build_depend>
   <build_depend>eigen_stl_containers</build_depend>
   <build_depend>resource_retriever</build_depend>
+  <build_depend>cmake_modules</build_depend>
 
   <run_depend>boost</run_depend>
   <run_depend>shape_msgs</run_depend>
