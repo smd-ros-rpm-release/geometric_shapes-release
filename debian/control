@@ -1,0 +1,12 @@
+Source: ros-indigo-geometric-shapes
+Section: misc
+Priority: extra
+Maintainer: Ioan Sucan <isucan@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), libassimp-dev, libboost-all-dev, libeigen3-dev, libqhull-dev, ros-indigo-catkin (>= 0.5.68), ros-indigo-cmake-modules, ros-indigo-console-bridge, ros-indigo-eigen-stl-containers, ros-indigo-octomap, ros-indigo-random-numbers, ros-indigo-resource-retriever, ros-indigo-shape-msgs, ros-indigo-shape-tools
+Homepage: http://ros.org/wiki/geometric_shapes
+Standards-Version: 3.9.2
+
+Package: ros-indigo-geometric-shapes
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libassimp-dev, libboost-all-dev, libeigen3-dev, libqhull-dev, ros-indigo-console-bridge, ros-indigo-eigen-stl-containers, ros-indigo-octomap, ros-indigo-random-numbers, ros-indigo-resource-retriever, ros-indigo-shape-msgs, ros-indigo-shape-tools
+Description: This package contains generic definitions of geometric shapes and bodies.
