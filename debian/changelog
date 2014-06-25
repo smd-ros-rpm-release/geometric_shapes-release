@@ -1,0 +1,47 @@
+ros-indigo-geometric-shapes (0.4.0-0trusty) trusty; urgency=high
+
+  * update usage of console_bridge to deal with version in Trusty
+  * Merge pull request #13 <https://github.com/ros-planning/geometric_shapes/issues/13> from ros-planning/testing-in-travis
+    Run local and moveit_core tests in Travis builds.
+  * Merge pull request #18 <https://github.com/ros-planning/geometric_shapes/issues/18> from dirk-thomas/hydro-devel
+    fix configure config.h.in when paths contain spaces fix #9 <https://github.com/ros-planning/geometric_shapes/issues/9>
+  * Run local and moveit_core tests in Travis builds.
+  * Contributors: Acorn, Dave Hershberger, Dirk Thomas, Ioan A Sucan, William Woodall
+
+ -- Ioan Sucan <isucan@google.com>  Tue, 24 Jun 2014 07:00:00 -0000
+
+ros-indigo-geometric-shapes (0.3.8-0trusty) trusty; urgency=high
+
+  * fix how we find eigen
+  * Contributors: Ioan Sucan
+
+ -- Ioan Sucan <isucan@willowgarage.com>  Tue, 25 Feb 2014 08:00:00 -0000
+
+ros-indigo-geometric-shapes (0.3.7-0trusty) trusty; urgency=high
+
+  * add build dep so we can find eigen, build fixes
+  * Contributors: Ioan A Sucan, Scott K Logan
+
+ -- Ioan Sucan <isucan@willowgarage.com>  Sun, 23 Feb 2014 08:00:00 -0000
+
+ros-indigo-geometric-shapes (0.3.6-0trusty) trusty; urgency=high
+
+  * Use assimp-dev dep for building
+  * Remove stray IS_ASSIMP3 define
+  * Invert Assimp version detect logic for greater accuracy
+  * Better feature detection for assimp version
+  * added travis support
+  * check for CATKIN_ENABLE_TESTING
+  * Contributors: Dave Hershberger, Ioan A Sucan, Lukas Bulwahn, Scott K Logan
+
+ -- Ioan Sucan <isucan@willowgarage.com>  Fri, 31 Jan 2014 08:00:00 -0000
+
+ros-indigo-geometric-shapes (0.3.5-0trusty) trusty; urgency=high
+
+  * Fix syntax error.
+  * white space fixes (tabs are now spaces)
+  * add comments for shape definitions
+
+ -- Ioan Sucan <isucan@willowgarage.com>  Mon, 23 Sep 2013 07:00:00 -0000
+
+
