@@ -20,7 +20,7 @@ before_install: # Use this to prepare the system to install prerequisites or dep
   - export CI_SOURCE_PATH=$(pwd)
   - export REPOSITORY_NAME=${PWD##*/}
   - echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
-  - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
+  - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
   - wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
   - sudo apt-get update -qq
   - sudo apt-get install -qq -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin ros-$ROS_DISTRO-ros
@@ -80,3 +80,9 @@ script: # All commands must exit with code 0 on success. Anything else is consid
   # and returns a result code indicating whether there were any
   # failures or not.
   - catkin_test_results .
+
+# Disable the build on indigo as it requires trusty but travis does not support trusty. 
+# https://github.com/travis-ci/travis-ci/issues/2046
+branches:
+  except:
+    - indigo-devel
